@@ -13,7 +13,6 @@
 	</properties>
 
 	<dependencies>
-
 		<dependency>
 	        <groupId>org.jnativehook</groupId>
 	        <artifactId>jnativehook</artifactId>
@@ -21,10 +20,22 @@
 	        <version>2.1.0_beta1</version>
 	        <systemPath>${basedir}/external-lib/jnativehook-2.1.0_beta1.jar</systemPath>
 	    </dependency>
-
 	</dependencies>
 
 	<build>
+	    <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+            </resource>
+        </resources>
+        <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
+        <testResources>
+            <testResource>
+                <directory>${basedir}/src/test/resources</directory>
+            </testResource>
+        </testResources>
+	
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
