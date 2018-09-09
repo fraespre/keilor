@@ -1,0 +1,6 @@
+
+git status
+git add .
+git commit -m “Updating blah blah”
+git push
+git pull
