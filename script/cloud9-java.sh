@@ -14,6 +14,6 @@ java -version
 
 # Install Maven2
 sudo apt-add-repository universe
-sudo apt-get update
+sudo apt-get update -y
 sudo apt-get remove maven2 -y
 sudo apt-get install maven -y
